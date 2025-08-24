@@ -47,6 +47,7 @@ def bits_to_bytes(bits: str) -> bytes:
 st.set_page_config(page_title="QRNG • Quantum Random Number Generator", layout="wide")
 
 # ---------- CSS ----------
+# ---------- CSS ----------
 st.markdown("""
 <style>
 :root{
@@ -57,11 +58,20 @@ html,body,.stApp{background:var(--bg);color:var(--text);font-family:"Segoe UI",s
 .nav-wrap{position:sticky;top:0;z-index:999;background:linear-gradient(90deg,var(--nav),#0b0c12);
     border-radius:14px;padding:10px;margin-bottom:18px;box-shadow:0 10px 25px rgba(0,0,0,.35);}
 .nav{display:flex;gap:8px;align-items:center;justify-content:center;flex-wrap:wrap;}
-.nav button{cursor:pointer;position:relative;border:none;padding:10px 16px;border-radius:10px;
-    color:var(--muted);transition:.2s ease;font-weight:600;background:rgba(255,255,255,0.06);}
-.nav button:hover{color:white;background:rgba(255,255,255,.12);}
-.nav button.active{color:white;background:linear-gradient(90deg,var(--a1),var(--a2));
-    box-shadow:0 4px 12px rgba(0,0,0,.4);}
+.nav button{
+    cursor:pointer;position:relative;border:none;padding:10px 16px;border-radius:10px;
+    color:#fff !important;background:#1E90FF !important; /* DodgerBlue */
+    font-weight:600;transition:.2s ease;box-shadow:0 2px 6px rgba(0,0,0,.3);
+}
+.nav button:hover{
+    background:#104E8B !important; /* DarkBlue */
+    color:#fff !important;
+}
+.nav button.active{
+    color:#fff !important;
+    background:linear-gradient(90deg,var(--a1),var(--a2)) !important;
+    box-shadow:0 4px 12px rgba(0,0,0,.4);
+}
 .card{background:var(--glass);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:22px;
     box-shadow:0 8px 24px rgba(0,0,0,.35);}
 .grid{display:grid;grid-template-columns:repeat(2,minmax(300px,1fr));gap:18px;}
@@ -69,6 +79,7 @@ html,body,.stApp{background:var(--bg);color:var(--text);font-family:"Segoe UI",s
 hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:16px 0;}
 </style>
 """, unsafe_allow_html=True)
+
 
 # ---------- Navigation ----------
 PAGES = ["Home","Theory","Simulator","Generator","Compare","Tests","Real-World","FAQ","Contact"]
