@@ -3,12 +3,17 @@
 ![Python](https://img.shields.io/badge/Python-3.8-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-No description provided
+QRNG-App is a web application designed to demonstrate and compare quantum random number generation (QRNG) with classical pseudo-random number generation (PRNG). Utilizing quantum principles, QRNG-App provides a platform to explore the inherent unpredictability of quantum mechanics in generating random numbers.
 
 ## Key Features
 
-- Utilizes Python to generate random numbers.
-- Simple and easy-to-use.
+-Quantum Random Number Generation: Leverages quantum phenomena to produce true random numbers.
+
+-Classical RNG Comparison: Allows users to compare quantum-generated numbers with those from classical algorithms.
+
+-Streamlit Interface: Provides an interactive and user-friendly interface for real-time demonstrations.
+
+-Visualization Tools: Includes histograms and statistical tests to analyze randomness quality.
 
 ## Installation
 
@@ -29,7 +34,10 @@ cd QRNG-App
 ```bash
 pip install -r requirements.txt
 ```
-
+4. Run the application:
+```bash
+streamlit run app.py
+```
 ## Usage
 
 1. Import the `random` module:
@@ -45,9 +53,16 @@ random_number = random.randint(1, 100)
 print(random_number)
 ```
 
-## Dependencies
+## Files Overview
+-app.py: Main Streamlit application file.
 
-- None
+-qrng.py: Module for quantum random number generation.
+
+-classical_rng.py: Module for classical pseudo-random number generation.
+
+-compare.py: Script to compare quantum and classical RNG outputs.
+
+-requirements.txt: Python dependencies for the project.
 
 ## Contributing
 
