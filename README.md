@@ -5,6 +5,10 @@
 
 QRNG-App is a web application designed to demonstrate and compare quantum random number generation (QRNG) with classical pseudo-random number generation (PRNG). Utilizing quantum principles, QRNG-App provides a platform to explore the inherent unpredictability of quantum mechanics in generating random numbers.
 
+## 🚀 Live Demo
+
+🔗 **(https://qrng-app-2kf3ffncks5pudtbd8rstz.streamlit.app/)**
+
 ## Key Features
 
 -Quantum Random Number Generation: Leverages quantum phenomena to produce true random numbers.
